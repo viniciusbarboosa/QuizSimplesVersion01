@@ -1,0 +1,122 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #464646;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #FFF;
+    font-size: 30px;
+}
+
+.progresso{
+    height: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.progressoBarra{
+    background-color: #00FF00;
+    height: 100%;
+    transition: all ease .5s;
+}
+
+
+.questaoArea,.pontuacaoArea{
+    display: none;
+}
+
+.questaoArea {
+    background-color: #000000c1;
+    max-width: 500px;
+    max-height: 700px;
+    width: 100%;
+    padding:20px;
+}
+
+.questao{
+    color: #FFF;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.opcao {
+    color: #FFF;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(255, 255, 255,0.5);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: #fefefe;
+    font-size: 16px;
+    cursor: pointer;
+    padding:20px;
+}
+
+.opcao:hover {
+    background-color: rgba(132, 131, 131, 0.2);
+}
+
+.pontuacaoArea{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.pontuacaoArea{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+
+.pontuacaoTitulo{
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pontuacaoPontos{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px; 
+}
+
+#resetarQuiz{
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #CCC;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#resetarQuiz:hover{
+    background-color: rgba(0, 0, 0, 0.4); 
+}
